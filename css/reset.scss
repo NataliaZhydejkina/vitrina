@@ -1,0 +1,143 @@
+@mixin radius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+
+@mixin left_radius($r) {
+  border-top-left-radius: $r;
+  -moz-border-top-left-radius: $r;
+  -webkit-border-top-left-radius: $r;
+  border-top-left-radius: $r;
+  -moz-border-top-left-radius: $r;
+  -webkit-border-top-left-radius: $r;
+  border-bottom-left-radius: $r;
+  -webkit-border-bottom-left-radius: $r;
+  -moz-border-bottom-left-radius: $r;
+
+}
+@mixin opacity($o){
+  opacity: $o/100;
+  filter: alpha(opacity =$o);
+}
+@mixin right_radius($r) {
+  -moz-border-radius-topright: $r;
+  -webkit-border-top-right-radius: $r;
+  border-top-right-radius: $r;
+  -moz-border-radius-bottomright: $r;
+  -webkit-border-bottom-right-radius: $r;
+  border-bottom-right-radius:$r;
+
+}
+
+@mixin bottom_radius($r) {
+  -moz-border-radius-bottom-right: $r;
+  -webkit-border-bottom-right-radius: $r;
+  border-bottom-right-radius: $r;
+  -moz-border-radius-bottom-left: $r;
+  -webkit-border-bottom-left-radius: $r;
+  border-bottom-left-radius: $r;
+}
+
+@mixin transit($s) {
+  transition: $s;
+  -moz-transition: $s;
+  -webkit-transition: $s;
+  -o-transition: $s;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, em center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, select, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,button {
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  border: 0px;
+  padding: 0px;
+  &:focus {
+    outline: none;
+  }
+}
+
+header, section, footer, .block {
+  width: 100%;
+  float: left;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.res_line {
+  text-align: justify;
+  &:after {
+    content: "";
+    margin-left: 100%;
+   }
+}
+
+.line_block {
+  display: inline-block;
+  float: none;
+}
+
+.after {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 100%;
+}

@@ -1,0 +1,836 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Витрина</title>
+</head>
+<body>
+<div class="wraper">
+    <div class="fon">
+        <div class="modal" id="reg">
+            <a href="javascript:void(0)" class="close"></a>
+            <div class="modal-content">
+                <h3 class="modal-zag">
+                    Регистрация
+                </h3>
+                <p class="login">Уже есть аккаунт? <a class="modal-button" href="#login">Войти</a></p>
+                <form action="javascript:void(0)" method="post">
+                    <label>
+                        <input type="text">
+                        <p>Логин (ник) </p>
+                    </label>
+                    <label>
+                        <input type="email">
+                        <p>E-mail</p>
+                    </label>
+                    <label>
+                        <input type="text">
+                        <p>Пароль</p>
+                    </label>
+                    <label>
+                        <input type="password">
+                        <p>Промокод (необязательно)</p>
+                    </label>
+                    <div class="checked">
+                        <label class="activ">
+                            <input type="checkbox" name="contract" checked value="conditions">
+                            <a href="javascript:void(0)" class="input"></a>
+                            <p class="text">Подтверждаю согласие с <a href="#">условиями сервиса</a></p>
+                        </label>
+                        <label class="activ">
+                            <input type="checkbox" name="contract" checked value="treatment">
+                            <a href="javascript:void(0)" class="input"></a>
+                            <p class="text">Согласие на <a href="#">обработку персональных даных</a></p>
+                        </label>
+                        <div class="submit-line">
+                            <input type="submit" value="Продолжить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal" id='login'>
+            <a href="javascript:void(0)" class="close"></a>
+            <div class="modal-content">
+                <h3 class="modal-zag">
+                    Вход
+                </h3>
+                <p class="login">Еще нет аккаунта? <a href="#reg" class="modal-button"> Регистрация</a></p>
+                <form action="javascript:void(0)" method="post">
+                    <label>
+                        <input type="email">
+                        <p>E-mail</p>
+                    </label>
+                    <label>
+                        <input type="password" id="password">
+                        <p>Пароль</p>
+                    </label>
+
+                    <div class="checked">
+                        <label id="option-pass">
+                            <input type="checkbox" name="option" value="show">
+                            <a href="javascript:void(0)" class="input"></a>
+                            <p class="text">Показать пароль</p>
+                        </label>
+                        <label class="activ">
+                            <input type="checkbox" checked="checked" name="option" value="seve">
+                            <a href="javascript:void(0)" class="input"></a>
+                            <p class="text">Запомнить меня</p>
+                        </label>
+                        </div>
+                    <div class="submit-line">
+                        <input type="submit" value="Войти">
+                    </div>
+                </form>
+                <div class="remind-line">
+                    <a class="modal-button" href="#remind">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id='remind'>
+            <a href="javascript:void(0)" class="close"></a>
+
+                <h3 class="modal-zag">
+                    Напомнить пароль
+                </h3>
+                <p class="act">Укажите, пожалуйста, адрес Вашей электронной почты<br>
+                    и мы отправим письмо с новым паролем для входа.</p>
+                <form action="javascript:void(0)" method="post">
+                    <div class="modal-content">
+                    <label>
+                        <input type="email">
+                        <p>E-mail</p>
+                    </label>
+
+
+
+
+                        <div class="submit-line">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+
+
+        </div>
+    </div>
+    <header>
+        <div class="content">
+            <a href="index.html" class="logo">Neon</a>
+            <p class="slogan-h">Откройте новый формат шопинга</p>
+            <div class="parlor first">
+                <a class="new-login modal-button" href="#login">Войти</a>
+                <div class="user_block">
+                    <p class="name">Nickname</p>
+                    <a class="user_menu" href="javascript:void(0)">Личный кабинет</a>
+                    <ul class="parlor_menu">
+                        <li><a href="auction1.html">Мои аукционы</a></li>
+                        <li><a href="#">Ставки</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="index.html">Данные</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li class="exit"><a href="#">Выход</a></li>
+                    </ul>
+                </div>
+                <p class="bet">Запас ставок:<span>520</span></p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="content">
+            <div class="button_line">
+                <a href="javascript:void(0)" class="button"><span></span> <span></span> <span></span></a>
+            </div>
+            <ul class="navbar res_line">
+                <li><a href="javascript:void(0)"><span>Главная</span></a></li>
+                <li class="parent"><a href="javascript:void(0)"><span>Каталог аукционов</span></a>
+                    <div class="pod-menu">
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat1"></div>
+                                        <p class="text-block">
+                                            <span>Товары</span>
+                                            для дома
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat2"></div>
+                                        <p class="text-block">
+                                            <span>Ноутбуки</span>
+                                            и планшеты
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat3"></div>
+                                        <p class="text-block">
+                                            <span>Телефоны</span>
+                                            и аксессуары
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat4"></div>
+                                        <p class="text-block">
+                                            <span>Аудиотехника</span>
+                                            и аксессуары
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat5"></div>
+                                        <p class="text-block">
+                                            <span>Спорт</span>
+                                            и отдых
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat6"></div>
+                                        <p class="text-block">
+                                            <span>Красота</span>
+                                            и здоровье
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img_block kat7"></div>
+                                        <p class="text-block">
+                                            <span>Подарочные</span>
+                                            сертификаты
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)"><span>Как это работает</span></a></li>
+                <li><a href="javascript:void(0)"><span>Помощь</span></a></li>
+
+
+            </ul>
+            <div class="search">
+                <a href="#" class="search_button"><img src="img/search.png" alt=""></a>
+                <form method="post" action="">
+                    <input type="text" placeholder="Поиск" id="search">
+                    <input type="submit" value="">
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <section class="vitrina_wrap">
+
+
+            <div class="vitrina">
+                <div class="slider-line">
+                    <div class="content">
+                        <div class="slider-wrap">
+
+                            <div id="slider">
+                                <div class="slide">
+                                    <div class="content">
+                                    <h3 class="slide-zag_small">Samsung Galaxy Note</h3>
+                                    <div class="img_block">
+                                        <img src="img/slider/tel.png" alt="">
+                                    </div>
+                                    <div class="text-block">
+                                        <h2>
+                                            <small>купить</small>
+                                            Samsung Galaxy Note
+                                        </h2>
+                                        <div class="discount">
+                                            <p><i>купить</i>со скидкой</p><span>до 90%</span>
+                                        </div>
+                                        <div class="button_line">
+                                            <a href="#"><span>как это работает?</span></a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="content">
+                                        <h3 class="slide-zag_small">Samsung Galaxy Note</h3>
+                                        <div class="img_block">
+                                            <img src="img/slider/tel.png" alt="">
+                                        </div>
+                                        <div class="text-block">
+                                            <h2>
+                                                <small>купить</small>
+                                                Samsung Galaxy Note
+                                            </h2>
+                                            <div class="discount">
+                                                <p><i>купить</i>со скидкой</p><span>до 90%</span>
+                                            </div>
+                                            <div class="button_line">
+                                                <a href="#"><span>как это работает?</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="content">
+                                        <h3 class="slide-zag_small">Samsung Galaxy Note</h3>
+                                        <div class="img_block">
+                                            <img src="img/slider/tel.png" alt="">
+                                        </div>
+                                        <div class="text-block">
+                                            <h2>
+                                                <small>купить</small>
+                                                Samsung Galaxy Note
+                                            </h2>
+                                            <div class="discount">
+                                                <p><i>купить</i>со скидкой</p><span>до 90%</span>
+                                            </div>
+                                            <div class="button_line">
+                                                <a href="#"><span>как это работает?</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+
+                <aside>
+                    <div class="block">
+                        <div class="cont">
+                            <h2 class="zag-menu"><i>Категория товара</i><span id="selected_cat">Товары для дома</span> </h2>
+                            <ul class="nav">
+                                <li><a href="#">Товары для дома</a></li>
+                                <li class="parent"><a href="#">Ноутбуки и планшеты</a></li>
+                                <li><a href="#">Телефоны и аксессуары</a></li>
+                                <li><a href="#">Аудиотехника и аксессуары</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Подарочные сертификаты</a></li>
+                                <li><a href="#">Спорт и отдых</a></li>
+
+                            </ul>
+                            <div class="filtr">
+                            <h2 class="zag-menu">Тип аукциона</h2>
+                            <form method="post" action="#">
+                                <div class="select ">
+                                    <input name="type" value="Все типы аукционов" type="text">
+                                    <ul class="option">
+                                        <li><a href="javascript:void(0)">Все типы аукционов</a></li>
+                                        <li><a href="javascript:void(0)">Только для новичков</a></li>
+                                        <li><a href="javascript:void(0)">Хиты продаж</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="filtr">
+                            <h2 class="zag-menu">Статус аукциона</h2>
+                            <form method="post" action="#">
+                                <div class="select ">
+                                    <input name="status" value="Активные аукционы" type="text">
+                                    <ul class="option">
+                                        <li><a href="javascript:void(0)">Все типы аукционов</a></li>
+                                        <li><a href="javascript:void(0)">Активные аукционы</a></li>
+                                        <li><a href="javascript:void(0)">Завершенные аукционы</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ban_wrap">
+                        <h3 class="name-ban">
+                            <small>Новый</small>
+                            Samsung Galaxy Note
+                        </h3>
+                        <div class="img_block">
+                            <img src="img/vitrina/tel.png" alt="">
+                        </div>
+                        <p class="discont">со скидкой <span>до 90%</span></p>
+                    </div>
+                </aside>
+                <div class="block-line">
+                    <div class="block-wrap">
+                        <div class="vitrina-block res_line">
+                            <div class="product">
+                                <h4 class="zag">
+                                    Квадрокоптер<br>
+                                    Phantom 4
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img3.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Lenovo Yoga
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img2.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Квадрокоптер Phantom 4
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img4.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Смартфон<br>
+                                    Samsung Galaxy X7
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img5.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Портативная<br>
+                                    колонка JBL
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img6.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Беспроводные<br>
+                                    наушники JBL
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img7.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    IPhone 5S Black
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img1.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Фотоапарат<br>
+                                    Canon 700D
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img8.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <h4 class="zag">
+                                    Lenovo Yoga
+                                </h4>
+                                <div class="img_block smoll-img">
+                                    <div  class="hover">
+                                        <a href="#" class="basket"><img src="img/vitrina/basket.png" alt=""></a>
+                                        <a href="#" class="look"></a>
+                                        <a href="#" class="star"><img src="img/vitrina/star.png" alt=""></a>
+                                    </div>
+                                    <img src="img/vitrina/img2.jpg" alt="">
+                                </div>
+                                <div class="line">
+                                    <div class="rate_info">
+                                        <p class="rate"><span>184,5</span>руб.</p>
+                                        <div class="user-time">
+                                            <p class="user">User001</p>
+                                            <p class="tim">00:00:12</p>
+                                        </div>
+                                        <a href="javascript:void(0)" class="button_a">Ставка</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="pagination_line">
+                        <div class="pagination_block">
+                            <a href="#" class="arow prev"></a>
+                            <p class="current_page">3</p><i>/</i><span>100</span>
+                            <a href="#" class="arow next"></a>
+                        </div>
+                </div>
+                    <div class="ban-line_small">
+                        <a href="#">
+                            <div class="hover"></div>
+                            <div class="img_block">
+                                <img src="img/slider/tel.png" alt="">
+                            </div>
+                            <div class="text-block">
+                                <h3>
+                                    <small>Новый</small>
+                                    Samsung Galaxy Note
+                                </h3>
+                                <p class="discont">
+                                    со скидкой до <span>90%</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                <div class="complete">
+                    <h2 class="complete-zag">ПРИМЕР ЗАВЕРШЕННЫХ АУКЦИОНОВ</h2>
+                    <div class="complete_line">
+                        <div class="auction-block">
+                            <h4 class="zag">
+                                IPhone 5S Black
+                            </h4>
+                            <div class="img_block ">
+                               <div  class="hover">
+                                    <a href="#" class="look"></a>
+                                </div>
+                                <img src="img/vitrina/img1.jpg" alt="">
+                            </div>
+                            <div class="line">
+                                <div class="rate_info">
+                                    <p class="rate"><span>123,6</span> руб.</p>
+                                    <div class="user-time">
+                                        <p class="data">13.02.2017 21:46:05</p>
+                                        <p class="winer">User001</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="close-line">
+                                <h4>Аукцион завершен</h4>
+                            </div>
+
+                        </div>
+                        <div class="auction-block">
+                            <h4 class="zag">
+                                Lenovo Yoga
+                            </h4>
+                            <div class="img_block ">
+                                <div  class="hover">
+                                    <a href="#" class="look"></a>
+                                </div>
+                                <img src="img/vitrina/img2.jpg" alt="">
+                            </div>
+                            <div class="line">
+                                <div class="rate_info">
+                                    <p class="rate"><span>123,6</span> руб.</p>
+                                    <div class="user-time">
+                                        <p class="data">13.02.2017 21:46:05</p>
+                                        <p class="winer">User001</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="close-line">
+                                <h4>Аукцион завершен</h4>
+                            </div>
+
+                        </div>
+                        <div class="auction-block">
+                            <h4 class="zag">
+                                Квадрокоптер<br>
+                                Phantom 4
+                            </h4>
+                            <div class="img_block ">
+                                <div  class="hover">
+                                    <a href="#" class="look"></a>
+                                </div>
+                                <img src="img/vitrina/img3.jpg" alt="">
+                            </div>
+                            <div class="line">
+                                <div class="rate_info">
+                                    <p class="rate"><span>123,6</span> руб.</p>
+                                    <div class="user-time">
+                                        <p class="data">13.02.2017 21:46:05</p>
+                                        <p class="winer">User001</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="close-line">
+                                <h4>Аукцион завершен</h4>
+                            </div>
+
+                        </div>
+                        <div class="auction-block">
+                            <h4 class="zag">
+                                Sony PlayStation 4
+                            </h4>
+                            <div class="img_block ">
+                                <div  class="hover">
+                                    <a href="#" class="look"></a>
+                                </div>
+                                <img src="img/vitrina/img4.jpg" alt="">
+                            </div>
+                            <div class="line">
+                                <div class="rate_info">
+                                    <p class="rate"><span>123,6</span> руб.</p>
+                                    <div class="user-time">
+                                        <p class="data">13.02.2017 21:46:05</p>
+                                        <p class="winer">User001</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="close-line">
+                                <h4>Аукцион завершен</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            <div class="top">
+                <a href="index.html" class="logo">Neon</a>
+
+            </div>
+            <div class="nav_line">
+                <nav class="res_line">
+                    <ul class="hide">
+                        <h4>Neon</h4>
+                        <li><a href="javascript:void(0)">Все аукционы</a></li>
+                        <li><a href="javascript:void(0)">Личный кабинет </a></li>
+                        <li><a href="javascript:void(0)">Купить ставки</a></li>
+
+                    </ul>
+                    <ul class="left">
+                        <h4>Важная информация</h4>
+                        <li><a href="javascript:void(0)">Пользовательское соглашение</a></li>
+                        <li><a href="javascript:void(0)">Условия купли-продажи</a></li>
+                        <li><a href="javascript:void(0)">Обработка персональных данных </a></li>
+                        <li><a href="javascript:void(0)">Партнерская программа</a></li>
+                    </ul>
+                    <ul class="right">
+                        <h4>Полезные статьи</h4>
+                        <li><a href="javascript:void(0)">Как это работает</a></li>
+                        <li><a href="javascript:void(0)">Секреты успеха</a></li>
+                        <li><a href="javascript:void(0)">Вопрос-ответ</a></li>
+                        <li><a href="javascript:void(0)">Бонусная программа</a></li>
+                    </ul>
+                    <ul class="mailing">
+                        <p>Подписывайтесь на нашу рассылку</p>
+                        <li>
+                            <form action="#" method="post">
+                                <input type="email" placeholder="Введите ваш e-mail"><input type="submit" value="">
+                            </form>
+                        </li>
+                        <li class="soc_line">
+                            <a href="javascript:void(0)"><img src="img/soc1.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="img/soc2.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="img/soc3.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="img/soc4.png" alt=""></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="content">
+                <p>
+                    <span><i>«Аукцион» – название акции, проводимой в соответствии с Пользовательским соглашением,</i><i>размещенным на данном сайте.</i></span>
+                    «Аукционная стоимость» – это установленная по итогам Акции цена Товара.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+var win_w=$(window).width();
+        $('#slider').slick({
+            dots: true,
+            draggable: true,
+            arrows: true,
+            responsive: [
+
+
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        arrows: false,
+
+                    }
+                }
+
+
+            ]
+
+
+        });
+        if(win_w<698){
+            $('.vitrina-block').slick({
+                dots: true,
+                draggable: true,
+                arrows: false,
+                infinite:true
+
+
+
+
+            });
+        }
+
+
+    })
+</script>
+</body>
+</html>
+
